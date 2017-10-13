@@ -8,3 +8,5 @@ pillow
 edward
 seaborn
 pip-tools
+observations
+requests
