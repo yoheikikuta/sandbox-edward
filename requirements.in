@@ -1,0 +1,10 @@
+tensorflow
+jupyter
+pandas
+scikit-learn
+matplotlib
+scikit-image
+pillow
+edward
+seaborn
+pip-tools
