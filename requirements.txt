@@ -4,22 +4,29 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
+backports-abc==0.5        # via tornado
+backports.functools-lru-cache==1.5  # via matplotlib
+backports.shutil-get-terminal-size==1.0.0  # via ipython
+backports.weakref==1.0.post1  # via tensorflow
 bleach==1.5.0             # via nbconvert, tensorflow-tensorboard
-certifi==2017.7.27.1      # via requests
+certifi==2017.7.27.1      # via requests, tornado
 chardet==3.0.4            # via requests
 click==6.7                # via pip-tools
+configparser==4.0.2       # via entrypoints
 cycler==0.10.0            # via matplotlib
 decorator==4.1.2          # via ipython, networkx, traitlets
 edward==1.3.4
 entrypoints==0.2.3        # via nbconvert
+enum34==1.1.6             # via traitlets
 first==2.0.1              # via pip-tools
+funcsigs==1.0.2           # via mock
+functools32==3.2.3.post2  # via jsonschema
 html5lib==0.9999999       # via bleach, tensorflow-tensorboard
 idna==2.6                 # via requests
 ipykernel==4.6.1          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
 ipython-genutils==0.2.0   # via nbformat, notebook, qtconsole, traitlets
-ipython==6.2.1            # via ipykernel, ipywidgets, jupyter-console
+ipython==5.8.0            # via ipykernel, ipywidgets, jupyter-console
 ipywidgets==7.0.1         # via jupyter
-jedi==0.11.0              # via ipython
 jinja2==2.9.6             # via nbconvert, notebook
 jsonschema==2.6.0         # via nbformat
 jupyter-client==5.1.0     # via ipykernel, jupyter-console, notebook, qtconsole
@@ -30,6 +37,7 @@ markdown==2.6.9           # via tensorflow-tensorboard
 markupsafe==1.0           # via jinja2
 matplotlib==2.1.0
 mistune==0.7.4            # via nbconvert
+mock==3.0.5               # via tensorflow
 nbconvert==5.3.1          # via jupyter, notebook
 nbformat==4.4.0           # via ipywidgets, nbconvert, notebook
 networkx==2.0             # via scikit-image
@@ -39,7 +47,7 @@ observations==0.1.3
 olefile==0.44             # via pillow
 pandas==0.20.3
 pandocfilters==1.4.2      # via nbconvert
-parso==0.1.0              # via jedi
+pathlib2==2.3.5           # via ipython, pickleshare
 pexpect==4.2.1            # via ipython
 pickleshare==0.7.4        # via ipython
 pillow==4.3.0
@@ -55,12 +63,15 @@ pywavelets==0.5.2         # via scikit-image
 pyzmq==16.0.2             # via jupyter-client
 qtconsole==4.3.1          # via jupyter
 requests==2.18.4
+scandir==1.10.0           # via pathlib2
 scikit-image==0.13.1
 scikit-learn==0.19.0
 scipy==0.19.1             # via scikit-image, seaborn
 seaborn==0.8.1
 simplegeneric==0.8.1      # via ipython
-six==1.11.0               # via bleach, cycler, edward, html5lib, matplotlib, observations, pip-tools, prompt-toolkit, protobuf, python-dateutil, scikit-image, tensorflow, tensorflow-tensorboard, traitlets
+singledispatch==3.4.0.3   # via tornado
+six==1.11.0               # via bleach, cycler, edward, html5lib, matplotlib, mock, observations, pathlib2, pip-tools, prompt-toolkit, protobuf, python-dateutil, scikit-image, singledispatch, tensorflow, tensorflow-tensorboard, traitlets
+subprocess32==3.5.4       # via matplotlib
 tensorflow-tensorboard==0.1.8  # via tensorflow
 tensorflow==1.3.0
 terminado==0.6            # via notebook
@@ -69,6 +80,6 @@ tornado==4.5.2            # via ipykernel, notebook, terminado
 traitlets==4.3.2          # via ipykernel, ipython, ipywidgets, jupyter-client, jupyter-core, nbconvert, nbformat, notebook, qtconsole
 urllib3==1.22             # via requests
 wcwidth==0.1.7            # via prompt-toolkit
-werkzeug==0.12.2          # via tensorflow-tensorboard
+werkzeug==0.15.3          # via tensorflow-tensorboard
 wheel==0.30.0             # via tensorflow, tensorflow-tensorboard
 widgetsnbextension==3.0.3  # via ipywidgets
