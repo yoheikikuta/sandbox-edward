@@ -36,7 +36,7 @@ jupyter==1.0.0
 markdown==2.6.9           # via tensorflow-tensorboard
 markupsafe==1.0           # via jinja2
 matplotlib==2.1.0
-mistune==0.7.4            # via nbconvert
+mistune==0.8.1            # via nbconvert
 mock==3.0.5               # via tensorflow
 nbconvert==5.3.1          # via jupyter, notebook
 nbformat==4.4.0           # via ipywidgets, nbconvert, notebook
