@@ -21,15 +21,16 @@ grpcio==1.24.1            # via tensorboard, tensorflow
 h5py==2.10.0              # via keras-applications
 html5lib==0.9999999       # via bleach
 idna==2.6                 # via requests
+ipaddress==1.0.23         # via notebook
 ipykernel==4.6.1          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
 ipython-genutils==0.2.0   # via nbformat, notebook, qtconsole, traitlets
 ipython==5.8.0            # via ipykernel, ipywidgets, jupyter-console
 ipywidgets==7.0.1         # via jupyter
 jinja2==2.9.6             # via nbconvert, notebook
 jsonschema==2.6.0         # via nbformat
-jupyter-client==5.1.0     # via ipykernel, jupyter-console, notebook, qtconsole
+jupyter-client==5.3.4     # via ipykernel, jupyter-console, notebook, qtconsole
 jupyter-console==5.2.0    # via jupyter
-jupyter-core==4.3.0       # via jupyter-client, nbconvert, nbformat, notebook, qtconsole
+jupyter-core==4.6.0       # via jupyter-client, nbconvert, nbformat, notebook, qtconsole
 jupyter==1.0.0
 keras-applications==1.0.8  # via tensorflow
 keras-preprocessing==1.1.0  # via tensorflow
@@ -50,6 +51,7 @@ pexpect==4.2.1            # via ipython
 pickleshare==0.7.4        # via ipython
 pillow==6.2.0
 pip-tools==1.10.1
+prometheus-client==0.7.1  # via notebook
 prompt-toolkit==1.0.15    # via ipython, jupyter-console
 protobuf==3.10.0          # via tensorboard, tensorflow
 ptyprocess==0.5.2         # via pexpect, terminado
@@ -58,13 +60,14 @@ pyparsing==2.2.0          # via matplotlib
 python-dateutil==2.6.1    # via jupyter-client, matplotlib, pandas
 pytz==2017.2              # via matplotlib, pandas
 pywavelets==0.5.2         # via scikit-image
-pyzmq==16.0.2             # via jupyter-client
+pyzmq==18.1.0             # via jupyter-client, notebook
 qtconsole==4.3.1          # via jupyter
 requests==2.18.4
 scikit-image==0.13.1
 scikit-learn==0.19.0
 scipy==0.19.1             # via scikit-image, seaborn
 seaborn==0.8.1
+send2trash==1.5.0         # via notebook
 simplegeneric==0.8.1      # via ipython
 six==1.11.0               # via absl-py, bleach, cycler, edward, grpcio, h5py, html5lib, keras-preprocessing, matplotlib, observations, pip-tools, prompt-toolkit, protobuf, python-dateutil, scikit-image, tensorboard, tensorflow, traitlets
 tensorboard==2.0.0        # via tensorflow
@@ -73,7 +76,7 @@ tensorflow==2.0.0
 termcolor==1.1.0          # via tensorflow
 terminado==0.6            # via notebook
 testpath==0.3.1           # via nbconvert
-tornado==4.5.2            # via ipykernel, notebook, terminado
+tornado==4.5.2            # via ipykernel, jupyter-client, notebook, terminado
 traitlets==4.3.2          # via ipykernel, ipython, ipywidgets, jupyter-client, jupyter-core, nbconvert, nbformat, notebook, qtconsole
 urllib3==1.22             # via requests
 wcwidth==0.1.7            # via prompt-toolkit
